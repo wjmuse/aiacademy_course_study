@@ -1,0 +1,8 @@
+
+## test server
+
+- python 3.6.2
+- keras
+- tensorflow
+- check docker : which nvidia-docker
+- ceate container : nvidia-docker run --rm -d -t -p 9990:9990 -v "$HOME/work:/root/work" --name wayne-env nvidia/cuda:14.04 zsh
