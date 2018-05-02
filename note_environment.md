@@ -5,6 +5,7 @@
 - keras 2.0.8
 - nvcc V8.0.61
 - tensorflow 1.3.0
+- Pillow 5.1.0
 - check docker : which nvidia-docker
 - ceate container : nvidia-docker run --rm -d -t -p 9990:9990 -v "$HOME/work:/root/work" --name wayne-env nvidia/cuda:14.04 zsh
 - login container : docker exec -it wayne-env zsh
