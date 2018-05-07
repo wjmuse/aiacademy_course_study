@@ -15,7 +15,7 @@
 - ceate container : nvidia-docker run --rm -d -t -p 9990:9990 -v "$HOME/work:/root/work" --name wayne-env nvidia/cuda:14.04 zsh
 - login container : docker exec -it wayne-env zsh
 
-## Memory
+## Memory Uage Setting
 
 ```
 from keras.backend.tensorflow_backend import set_session
@@ -23,3 +23,13 @@ config = tf.ConfigProto()
 config.gpu_options.per_process_gpu_memory_fraction = 0.4
 set_session(tf.Session(config=config))
 ```
+
+## nvidia-smi 相關指令
+
+數據說明：
+- Fan: 風扇轉速
+- Temp: 溫度
+- Perf: 狀態性能，P0 - P12，P0 表示最大性能、P12 最小
+常用參數：
+- 持續更新：nvidia-smi -l 1
+- 詳細資訊：nvidia-smi -q
