@@ -10,9 +10,11 @@
 - Pillow 5.1.0
 - opencv-python 3.4.0.12
   - apt update && apt install -y libsm6 libxext6
-  - apt-get install -y libxrender-dev
+  - apt-get install -y libxrender-dev
+- faiss 1.2.1
+  - conda install faiss-gpu -c pytorch
 - check docker : which nvidia-docker
-- ceate container : nvidia-docker run --rm -d -t -p 9990:9990 -v "$HOME/work:/root/work" --name wayne-env nvidia/cuda:14.04 zsh
+- ceate container : nvidia-docker run --rm -d -t -p 9990:9990 -v "$HOME/work:/root/work" -v "/home/data/pixrs-data:/pixrs-data" --name wayne-env nvidia/cuda:14.04 zsh
 - login container : docker exec -it wayne-env zsh
 
 ## Memory Uage Setting
