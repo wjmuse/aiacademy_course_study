@@ -1,5 +1,5 @@
 
-## test server
+## test server docker
 
 - python 3.6.3           
 - tensorflow-gpu            1.4.1 (conda)
