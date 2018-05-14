@@ -8,6 +8,7 @@
 - keras                     2.1.5 (pip)
 - nvcc V8.0.61
 - Pillow 5.1.0
+- imgaug 0.2.5
 - opencv-python 3.4.0.12
   - apt update && apt install -y libsm6 libxext6
   - apt-get install -y libxrender-dev
